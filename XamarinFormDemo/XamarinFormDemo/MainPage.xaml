@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamarinFormDemo"
+             x:Class="XamarinFormDemo.MainPage">
+    
+    <NavigationPage Title="Add user" Icon="add.png">
+        <x:Arguments>
+            <local:AddUser />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="List users" Icon="list.png">
+        <x:Arguments>
+            <local:ListUsers />
+        </x:Arguments>
+    </NavigationPage>
+</TabbedPage >
