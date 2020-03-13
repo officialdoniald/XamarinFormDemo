@@ -13,7 +13,8 @@ namespace XamarinFormDemo
 
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //MainPage = new MainPage();
+            MainPage = new AbsoluteLayoutDemo();
         }
 
         protected override void OnStart() { }
