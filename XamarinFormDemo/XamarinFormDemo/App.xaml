@@ -33,6 +33,14 @@
                 <Setter Property="TextColor" Value="{StaticResource AppBarColor}" />
                 <Setter Property="FontSize" Value="{StaticResource NormalFontSize}" />
                 <Setter Property="HorizontalOptions" Value="Start" />
+                <Setter Property="HorizontalTextAlignment">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="LayoutAlignment">
+                            <On Platform="Android" Value="Center"/>
+                            <On Platform="iOS" Value="Left"/>
+                        </OnPlatform>
+                    </Setter.Value>
+                </Setter>
             </Style>
 
             <Style TargetType="Picker" x:Key="NormalPicker">
