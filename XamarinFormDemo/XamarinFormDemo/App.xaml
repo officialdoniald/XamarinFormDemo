@@ -54,7 +54,12 @@
                 <Setter Property="BorderColor" Value="{StaticResource AppColor}" />
                 <Setter Property="BorderWidth" Value="{StaticResource ButtonBorderWidth}" />
             </Style>
-            
+
+            <OnPlatform x:TypeArguments="Thickness" x:Key="FirstElement">
+                <On Platform="Android" Value="25,25,0,0" />
+                <On Platform="iOS" Value="25,50,0,0" />
+            </OnPlatform>
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>
